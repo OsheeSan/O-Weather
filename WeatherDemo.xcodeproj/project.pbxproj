@@ -11,14 +11,16 @@
 		8458996329017020003DD2F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458996229017020003DD2F7 /* ContentView.swift */; };
 		8458996529017021003DD2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8458996429017021003DD2F7 /* Assets.xcassets */; };
 		8458996829017021003DD2F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8458996729017021003DD2F7 /* Preview Assets.xcassets */; };
+		8458997029017360003DD2F7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458996F29017360003DD2F7 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8458995D29017020003DD2F7 /* WeatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8458995D29017020003DD2F7 /* O-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8458996029017020003DD2F7 /* WeatherDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoApp.swift; sourceTree = "<group>"; };
 		8458996229017020003DD2F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8458996429017021003DD2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8458996729017021003DD2F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8458996F29017360003DD2F7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,7 @@
 		8458995E29017020003DD2F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8458995D29017020003DD2F7 /* WeatherDemo.app */,
+				8458995D29017020003DD2F7 /* O-Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +53,7 @@
 		8458995F29017020003DD2F7 /* WeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8458996E2901733F003DD2F7 /* Managers */,
 				8458996029017020003DD2F7 /* WeatherDemoApp.swift */,
 				8458996229017020003DD2F7 /* ContentView.swift */,
 				8458996429017021003DD2F7 /* Assets.xcassets */,
@@ -67,12 +70,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8458996E2901733F003DD2F7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8458996F29017360003DD2F7 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8458995C29017020003DD2F7 /* WeatherDemo */ = {
+		8458995C29017020003DD2F7 /* O-Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8458996B29017021003DD2F7 /* Build configuration list for PBXNativeTarget "WeatherDemo" */;
+			buildConfigurationList = 8458996B29017021003DD2F7 /* Build configuration list for PBXNativeTarget "O-Weather" */;
 			buildPhases = (
 				8458995929017020003DD2F7 /* Sources */,
 				8458995A29017020003DD2F7 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = WeatherDemo;
+			name = "O-Weather";
 			productName = WeatherDemo;
-			productReference = 8458995D29017020003DD2F7 /* WeatherDemo.app */;
+			productReference = 8458995D29017020003DD2F7 /* O-Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8458995C29017020003DD2F7 /* WeatherDemo */,
+				8458995C29017020003DD2F7 /* O-Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +150,7 @@
 			files = (
 				8458996329017020003DD2F7 /* ContentView.swift in Sources */,
 				8458996129017020003DD2F7 /* WeatherDemoApp.swift in Sources */,
+				8458997029017360003DD2F7 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8458996B29017021003DD2F7 /* Build configuration list for PBXNativeTarget "WeatherDemo" */ = {
+		8458996B29017021003DD2F7 /* Build configuration list for PBXNativeTarget "O-Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8458996C29017021003DD2F7 /* Debug */,
