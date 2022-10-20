@@ -26,7 +26,8 @@ struct WelcomeView: View {
             }
             .cornerRadius(20)
 //            .symbolVariant(.fill)
-            .foregroundColor(.white)
+            .foregroundColor(.white)  //Text color
+            .tint(Color(hue: 0.062, saturation: 1.0, brightness: 1.0))  //Background color
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity )
