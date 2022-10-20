@@ -12,6 +12,15 @@ struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
     var body: some View {
         VStack{
+            
+            Image(systemName: "cloud.sun")
+                .font(.system(size: 100))
+                .frame(width: 150, height: 150)
+                .padding()
+                .background(Color(hue: 1.0, saturation: 0.015, brightness: 0.155))
+                .cornerRadius(50)
+                .foregroundColor(.orange)
+            
             VStack(spacing: 20){
                 Text("Welcome to O-Weather")
                     .font(.title)

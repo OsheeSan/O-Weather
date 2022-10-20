@@ -67,32 +67,37 @@ struct WeatherView: View {
             VStack{
                 Spacer()
                 VStack(alignment: .leading,spacing: 20){
-                    Text("Weather now")
-                        .bold().padding(.bottom)
-                    
-                    HStack{
-                        WeatherRow(logo: "thermometer", name: "Min temperature", value: weather.main.temp_min.roundDouble() + "°")
-                        Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temperature", value: weather.main.temp_max.roundDouble() + "°")
+                    withAnimation{
+                        Text("Weather now")
+                            .bold().padding(.bottom)
                     }
-                    HStack{
-                        WeatherRow(logo: "wind", name: "Wind speed", value: weather.wind.speed.roundDouble() + " m/s")
-                        Spacer()
-                        WeatherRow(logo: "humidity", name: "Humidity              ", value: weather.main.humidity.roundDouble() + "%")
+                        HStack{
+                            WeatherRow(logo: "thermometer", name: "Min temperature", value: weather.main.temp_min.roundDouble() + "°")
+                            Spacer()
+                            WeatherRow(logo: "thermometer", name: "Max temperature", value: weather.main.temp_max.roundDouble() + "°")
+                        }
+                        HStack{
+                            WeatherRow(logo: "wind", name: "Wind speed", value: weather.wind.speed.roundDouble() + " m/s")
+                            Spacer()
+                            WeatherRow(logo: "humidity", name: "Humidity              ", value: weather.main.humidity.roundDouble() + "%")
+                        }
                     }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-                .padding(.bottom, 20)
-                .foregroundColor(.white)
-                .background(Color(hue: 1.0, saturation: 0.025, brightness: 0.228))
-                .cornerRadius(20, corners: [.topLeft, .topRight])
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .padding(.bottom, 20)
+                    .foregroundColor(.white)
+                    .background(Color(hue: 1.0, saturation: 0.025, brightness: 0.228))
+                    .cornerRadius(20, corners: [.topLeft, .topRight])
+                
+                
             }
+            
         }
         .edgesIgnoringSafeArea(.bottom)
         .background(.black)
         .preferredColorScheme(.dark)
     }
+    
 }
 
 struct WeatherView_Previews: PreviewProvider {
